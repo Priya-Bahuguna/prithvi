@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An environmental habits survey — help us understand what people are already doing.">
+<meta name="keywords" content="Earth, environment, nature, sustainability, pollution, trees, water, India">
+<meta name="author" content="Prithvi Environmental Awareness Project">
+<title>Survey · Prithvi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="glyph"></span> Prithvi</a>
+    <input type="checkbox" id="theme-toggle">
+    <label class="theme-switch" for="theme-toggle">
+      <span class="track"></span> Night mode
+    </label>
+    <input type="checkbox" id="nav-toggle">
+    <label class="nav-label" for="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Earth</a></li>
+          <li><a href="environment.html">Environment</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="survey.html" aria-current="page">Survey</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="survey">
+  <div class="wrap">
+    <h2>Environmental awareness survey</h2>
+    <p>Tell us a little about your habits and concerns — it takes about two minutes.</p>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" minlength="6">
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional information</legend>
+
+        <div class="field">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div class="field">
+          <label for="month">Month</label>
+          <input type="month" id="month" name="month">
+        </div>
+        <div class="field">
+          <label for="week">Week</label>
+          <input type="week" id="week" name="week">
+        </div>
+        <div class="field">
+          <label for="time">Preferred time</label>
+          <input type="time" id="time" name="time">
+        </div>
+        <div class="field">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="10" max="100">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>How often do you plant trees?</legend>
+        <div class="radio-group">
+          <label><input type="radio" id="often" name="treePlanting" value="often"> Often</label>
+          <label><input type="radio" id="sometimes" name="treePlanting" value="sometimes"> Sometimes</label>
+          <label><input type="radio" id="rarely" name="treePlanting" value="rarely"> Rarely</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which environmental actions do you follow?</legend>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="saveWater" name="actions" value="saveWater"> Save water</label>
+          <label><input type="checkbox" id="recycle" name="actions" value="recycle"> Recycle waste</label>
+          <label><input type="checkbox" id="avoidPlastic" name="actions" value="avoidPlastic"> Avoid single-use plastic</label>
+          <label><input type="checkbox" id="publicTransport" name="actions" value="publicTransport"> Use public transport</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Environmental concern</legend>
+        <div class="field">
+          <label for="concern">Select your biggest concern</label>
+          <select id="concern" name="concern">
+            <option value="">-- Select an option --</option>
+            <option value="air">Air pollution</option>
+            <option value="water">Water pollution</option>
+            <option value="deforestation">Deforestation</option>
+            <option value="plastic">Plastic pollution</option>
+            <option value="climate">Climate change</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <div class="field inline">
+          <label for="favoriteColor">Nature-inspired color</label>
+          <input type="color" id="favoriteColor" name="favoriteColor" value="#2d6a4f">
+        </div>
+        <div class="field">
+          <label for="awareness">Environmental awareness level</label>
+          <input type="range" id="awareness" name="awareness" min="0" max="100" value="50">
+        </div>
+        <div class="field">
+          <label for="search">Search</label>
+          <input type="search" id="search" name="search" placeholder="Search environmental topics">
+        </div>
+        <div class="field">
+          <label for="website">Your website</label>
+          <input type="url" id="website" name="website" placeholder="https://example.com">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Upload and feedback</legend>
+        <div class="field">
+          <label for="photo">Upload an environmental photo</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+        <div class="field">
+          <label for="message">Your environmental suggestion</label>
+          <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your suggestion here..."></textarea>
+        </div>
+      </fieldset>
+
+      <input type="hidden" name="project" value="Prithvi">
+
+      <p>
+        <input type="submit" value="Submit survey">
+        <input type="reset" value="Reset form">
+        <input type="button" value="Normal button">
+      </p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p><strong>&copy; 2026 Prithvi</strong> — Our Planet, Our Responsibility</p>
+    </div>
+    <div>
+      <p><a href="mailto:environment@example.com">environment@example.com</a></p>
+      <p><a href="index.html#home">Back to top</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
